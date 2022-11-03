@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+@import "_variables";
+@import "_fonts";
+* {
+  font-family: "Cubic_11", "Times New Roman";
+  margin: 0;
+}
