@@ -1,0 +1,32 @@
+@import "mixin";
+nav {
+  max-width: 1920px;
+  height: 56px;
+  background-color: var(--primary);
+  ol {
+    padding: 0 240px;
+    display: flex;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+
+    li {
+      text-align: center;
+      padding: 0 15px;
+    }
+
+    @include tablet() {
+      padding: 0;
+      margin-right: 35px;
+    }
+
+    @include mobile() {
+      padding: 0 25px;
+      justify-content: center;
+      a {
+        min-width: 71px;
+        display: block;
+      }
+    }
+  }
+}

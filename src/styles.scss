@@ -3,8 +3,56 @@
 @import "_fonts";
 * {
   font-family: "Cubic_11", "Times New Roman";
-  // margin: 0;
+  max-width: 1920px;
+  margin: 0;
 }
-body {
-  margin: 0 240px;
+
+ol li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// button series
+.btn-primary {
+  color: var(--primary);
+}
+
+.btn-secondary {
+  color: var(--secondary);
+}
+
+.btn-light-grey {
+  color: var(--light-grey);
+}
+
+.btn-tertiary {
+  color: var(--tertiary);
+}
+
+.btn-black {
+  color: var(--black);
+}
+
+// background series
+.bg-primary {
+  color: var(--primary);
+}
+
+.bg-secondary {
+  color: var(--secondary);
+}
+
+.bg-light-grey {
+  color: var(--light-grey);
+}
+
+.bg-tertiary {
+  color: var(--tertiary);
+}
+
+.bg-black {
+  color: var(--black);
 }

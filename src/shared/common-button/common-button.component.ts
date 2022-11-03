@@ -2,14 +2,17 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-sigh-up-button',
+  selector: 'app-common-button',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './sigh-up-button.component.html',
-  styleUrls: ['./sigh-up-button.component.scss']
+  templateUrl: './common-button.component.html',
+  styleUrls: ['./common-button.component.scss']
 })
-export class SighUpButtonComponent implements OnInit {
+export class CommonButtonComponent implements OnInit {
+
   @Input() displayText: string = '';
+  @Input() width: number = 0;
+  @Input() height: number = 0;
   constructor() { }
 
   ngOnInit(): void {

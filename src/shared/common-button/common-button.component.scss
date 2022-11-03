@@ -5,9 +5,7 @@ $borderWidth: 5px;
   color: var(--primary);
   background-color: #ffffff;
   border: 0;
-  font-size: var(--headline7);
-  width: 104px;
-  height: 35px;
+  font-size: var(--headline6);
 
   &:hover {
     border-top: $borderWidth solid var(--tertiary);
