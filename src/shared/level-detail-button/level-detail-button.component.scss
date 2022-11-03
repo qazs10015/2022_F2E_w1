@@ -1,0 +1,55 @@
+$borderWidth: 8px;
+
+.btn-default {
+  font-size: var(--headline4);
+  line-height: 42px;
+  padding: 7 13;
+  position: relative;
+  color: var(--primary);
+  background-color: #ffffff;
+  border: 0;
+  width: 307px;
+  height: 65px;
+
+  &:hover {
+    border-top: $borderWidth solid var(--tertiary);
+    border-left: $borderWidth solid var(--tertiary);
+    &::before {
+      content: "";
+      border-color: transparent white transparent transparent;
+      border-style: solid solid solid solid;
+      border-width: 0px $borderWidth $borderWidth 0;
+      height: 0px;
+      width: 0;
+      position: absolute;
+      top: -$borderWidth;
+      right: 0px;
+    }
+
+    &::after {
+      content: "";
+      border-color: transparent transparent transparent white;
+      border-style: solid solid solid solid;
+      border-width: $borderWidth 0 0 $borderWidth;
+      height: 0px;
+      width: 0;
+      position: absolute;
+      bottom: 0;
+      left: -$borderWidth;
+    }
+  }
+
+  &:active {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 0;
+  }
+  &:focus {
+    border: 1px solid var(--secondary);
+  }
+
+  &.disable {
+    background-color: var(--light-grey);
+    color: #ffffff;
+  }
+}

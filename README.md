@@ -1,27 +1,29 @@
-# 2022F2EW1
+# 2022 The F2E Week1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+## 作品說明
 
-## Development server
+本作品為六角學院 2022 The F2E Week1 的競賽主題：[Week1 - The F2E 活動網站設計](https://2022.thef2e.com/news/week1)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+作品採用設計師[小菜](https://2022.thef2e.com/users/12061549261446456235)的[Figma 設計稿](https://www.figma.com/file/8RVl4ySfbKgWHa5Wz7gMh7/%E5%B0%8F%E8%8F%9C_F2E_project1?node-id=0%3A1)
 
-## Code scaffolding
+## 系統說明
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+專案運行方式是使用 `npm install`、`npm start`
 
-## Build
+* NodeJS：16.14.0
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Angular CLI：14.2.7
 
-## Running unit tests
+## 資料夾說明
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* views - 畫面放置處
+* controllers
+* modules
 
-## Running end-to-end tests
+## 使用技術
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Framework：Angular
 
-## Further help
+* Programming Language：Typescript、Javascript、HTML、SCSS
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* 其他套件：[GSAP](https://greensock.com/gsap/)
