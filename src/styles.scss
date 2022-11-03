@@ -15,44 +15,108 @@ a {
   text-decoration: none;
 }
 
+// font size series
+.fontSize1 {
+  font-size: var(--headline1);
+}
+
+.fontSize2 {
+  font-size: var(--headline2);
+}
+
+.fontSize3 {
+  font-size: var(--headline3);
+}
+
+.fontSize4 {
+  font-size: var(--headline4);
+}
+
+.fontSize5 {
+  font-size: var(--headline5);
+}
+
+.fontSize6 {
+  font-size: var(--headline6);
+}
+
+.fontSize7 {
+  font-size: var(--headline7);
+}
+
+// font color series
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.light-grey {
+  color: var(--light-grey);
+}
+
+.tertiary {
+  color: var(--tertiary);
+}
+
+.black {
+  color: var(--black);
+}
+
+.white {
+  color: var(--white);
+}
+
 // button series
 .btn-primary {
+  cursor: pointer;
   color: var(--primary);
 }
 
 .btn-secondary {
+  cursor: pointer;
   color: var(--secondary);
 }
 
 .btn-light-grey {
+  cursor: pointer;
   color: var(--light-grey);
 }
 
 .btn-tertiary {
+  cursor: pointer;
   color: var(--tertiary);
 }
 
 .btn-black {
+  cursor: pointer;
   color: var(--black);
+}
+
+.btn-white {
+  cursor: pointer;
+  color: var(--white);
 }
 
 // background series
 .bg-primary {
-  color: var(--primary);
+  background-color: var(--primary);
 }
 
 .bg-secondary {
-  color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .bg-light-grey {
-  color: var(--light-grey);
+  background-color: var(--light-grey);
 }
 
 .bg-tertiary {
-  color: var(--tertiary);
+  background-color: var(--tertiary);
 }
 
 .bg-black {
-  color: var(--black);
+  background-color: var(--black);
 }

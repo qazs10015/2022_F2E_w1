@@ -22,5 +22,23 @@ hello world -->
     <li><app-sigh-up-button [displayText]="'登入'"></app-sigh-up-button></li>
   </ol>
 </nav>
-<main></main>
+<main class="bg-black">
+  <section>
+    <div class="basicInfo white">
+      <div>I- 00</div>
+      <div>HI- 99999</div>
+      <div>Hex School</div>
+    </div>
+    <div class="storyBoard1 white">
+      <!-- banner -->
+      <div></div>
+      <ol class="options">
+        <li class="selected" #option (mouseenter)="playOptionAni(1)">
+          1 LOG IN
+        </li>
+        <li #option (mouseenter)="playOptionAni(2)">2 SIGN UP</li>
+      </ol>
+    </div>
+  </section>
+</main>
 <footer></footer>

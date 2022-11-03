@@ -12,29 +12,29 @@ $borderWidth: 11px;
   &:hover {
     border-top: $borderWidth solid var(--tertiary);
     border-left: $borderWidth solid var(--tertiary);
-    &::before {
-      content: "";
-      border-color: transparent white transparent transparent;
-      border-style: solid solid solid solid;
-      border-width: 0px $borderWidth $borderWidth 0;
-      height: 0px;
-      width: 0;
-      position: absolute;
-      top: -$borderWidth;
-      right: 0px;
-    }
+    // &::before {
+    //   content: "";
+    //   border-color: transparent white transparent transparent;
+    //   border-style: solid solid solid solid;
+    //   border-width: 0px $borderWidth $borderWidth 0;
+    //   height: 0px;
+    //   width: 0;
+    //   position: absolute;
+    //   top: -$borderWidth;
+    //   right: 0px;
+    // }
 
-    &::after {
-      content: "";
-      border-color: transparent transparent transparent white;
-      border-style: solid solid solid solid;
-      border-width: $borderWidth 0 0 $borderWidth;
-      height: 0px;
-      width: 0;
-      position: absolute;
-      bottom: 0;
-      left: -$borderWidth;
-    }
+    // &::after {
+    //   content: "";
+    //   border-color: transparent transparent transparent white;
+    //   border-style: solid solid solid solid;
+    //   border-width: $borderWidth 0 0 $borderWidth;
+    //   height: 0px;
+    //   width: 0;
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: -$borderWidth;
+    // }
   }
 
   &:active {
