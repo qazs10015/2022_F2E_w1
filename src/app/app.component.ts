@@ -9,26 +9,8 @@ import TextPlugin from 'gsap/TextPlugin';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-
-
-  title = '2022F2E_w1';
-
-
-
+export class AppComponent {
 
   constructor() {
-
   }
-
-
-
-  ngOnInit(): void {
-
-
-
-  }
-
-
-
 }
