@@ -1,0 +1,35 @@
+.sunRiseContainer {
+  position: relative;
+  height: 1080px;
+  overflow: hidden;
+}
+.sunRiseContainer div {
+  position: absolute;
+  bottom: 0;
+}
+
+.lv3 {
+  right: 0;
+}
+
+.lv1 {
+  width: 789px;
+  height: 140px;
+  left: calc(50% - (789px / 2));
+
+  & p {
+    &:first-child {
+      border: 4px solid;
+      margin: 0;
+      margin: 0 auto 11px auto;
+      font-size: 4.5rem;
+      text-align: center;
+    }
+
+    &:last-child {
+      margin: 0;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+}

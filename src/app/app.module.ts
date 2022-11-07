@@ -6,10 +6,18 @@ import { SighUpButtonComponent } from 'src/shared/sigh-up/sigh-up.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoryBoard1Component } from './story-board1/story-board1.component';
+import { StoryBoard2Component } from './story-board2/story-board2.component';
+import { StoryBoard3Component } from './story-board3/story-board3.component';
+import { StoryBoard4Component } from './story-board4/story-board4.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StoryBoard1Component,
+    StoryBoard2Component,
+    StoryBoard3Component,
+    StoryBoard4Component
   ],
   imports: [
     BrowserModule,

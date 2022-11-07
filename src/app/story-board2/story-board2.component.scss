@@ -1,0 +1,175 @@
+@import "mixin";
+
+.storyboard2 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  .aniBox {
+    padding-top: 50px;
+    display: flex;
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .sb2Box {
+      min-width: 980px;
+      width: 980px;
+      height: 570px;
+
+      @include mobile() {
+        min-width: 768px;
+        width: 768px;
+        height: 447px;
+      }
+      margin-bottom: 243px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .coolAni {
+        position: absolute;
+        width: 637px;
+        height: 429px;
+        margin: 63px 187px 78px 156px;
+        @include mobile() {
+          width: 499px;
+          height: 336px;
+        }
+      }
+      .tank {
+        position: absolute;
+        width: 336px;
+        height: 135px;
+      }
+      .sb2BoxDialog1 {
+        display: flex;
+        position: absolute;
+        top: -47px;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        .dialog1 {
+          top: -47px;
+          right: 0px;
+        }
+        .typing1 {
+          position: absolute;
+          font-size: var(--headline4);
+          top: 20px;
+        }
+      }
+      .slogan1 {
+        position: absolute;
+        right: -6em;
+        bottom: 8em;
+        font-size: var(--headline4);
+        &::before {
+          content: attr(data-storke);
+          position: absolute;
+          z-index: -1;
+          -webkit-text-stroke: 7px var(--secondary);
+        }
+
+        @include mobile() {
+          position: absolute;
+          right: auto;
+          bottom: -5em;
+          font-size: var(--headline6);
+        }
+      }
+
+      .sb2BoxDialog2 {
+        display: flex;
+        top: -45px;
+        right: 5em;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin: 0 0 2.5em 12.5em;
+        @include mobile() {
+          .soldier1 {
+            width: 505px;
+          }
+        }
+        .dialog2 {
+          position: absolute;
+          left: -3.7em;
+          top: -5em;
+          @include mobile() {
+            left: 6em;
+            top: -5em;
+            width: 250px;
+          }
+        }
+        .typing2 {
+          position: absolute;
+          font-size: var(--headline4);
+          top: 0em;
+          left: 2em;
+          @include mobile() {
+            font-size: var(--headline6);
+            top: -1em;
+            left: 7.5em;
+          }
+        }
+      }
+
+      .slogan2 {
+        position: absolute;
+        left: -6em;
+        bottom: 5em;
+        font-size: var(--headline4);
+        &::before {
+          content: attr(data-storke);
+          position: absolute;
+          z-index: -1;
+          -webkit-text-stroke: 7px var(--secondary);
+        }
+
+        @include mobile() {
+          position: absolute;
+          left: auto;
+          bottom: -5em;
+          font-size: var(--headline6);
+        }
+      }
+
+      .sb2BoxAni3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        .tree {
+          position: absolute;
+          top: -5.8em;
+          left: 10em;
+        }
+        .soldier2 {
+          position: absolute;
+          bottom: 0;
+          left: 19em;
+        }
+      }
+
+      .slogan3 {
+        position: absolute;
+        right: -6em;
+        bottom: 3.5em;
+        font-size: var(--headline4);
+        &::before {
+          content: attr(data-storke);
+          position: absolute;
+          z-index: -1;
+          -webkit-text-stroke: 7px var(--secondary);
+        }
+
+        @include mobile() {
+          position: absolute;
+          right: auto;
+          bottom: -5em;
+          font-size: var(--headline6);
+        }
+      }
+    }
+  }
+}
