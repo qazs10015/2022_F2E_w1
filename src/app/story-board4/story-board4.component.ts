@@ -50,5 +50,19 @@ export class StoryBoard4Component implements OnInit {
   }
 
 
+  openLevelDetail(weekName: string) {
+    switch (weekName) {
+      case 'week1':
+        window.open('https://2022.thef2e.com/news/week1');
+        break;
+      case 'week2':
+        window.open('https://2022.thef2e.com/news/week2');
+        break;
+      case 'week3':
+        window.open('https://2022.thef2e.com/news/week3');
+        break;
+    }
+
+  }
 
 }

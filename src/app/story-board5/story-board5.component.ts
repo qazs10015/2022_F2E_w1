@@ -12,4 +12,8 @@ export class StoryBoard5Component implements OnInit {
   ngOnInit(): void {
   }
 
+  signUp() {
+    window.open('https://2022.thef2e.com/');
+  }
+
 }

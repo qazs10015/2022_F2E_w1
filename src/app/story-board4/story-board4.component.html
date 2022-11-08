@@ -30,7 +30,9 @@
       <img src="assets/images/tank2.gif" alt="tank2.gif" class="tank" />
     </div>
     <div class="btn-levelDetail">
-      <app-level-detail-button></app-level-detail-button>
+      <app-level-detail-button
+        (click)="openLevelDetail('week1')"
+      ></app-level-detail-button>
     </div>
   </div>
   <div class="week2">
@@ -63,7 +65,9 @@
       </div>
     </div>
     <div class="btn-levelDetail">
-      <app-level-detail-button></app-level-detail-button>
+      <app-level-detail-button
+        (click)="openLevelDetail('week2')"
+      ></app-level-detail-button>
     </div>
   </div>
 
@@ -97,7 +101,9 @@
       </div>
     </div>
     <div class="btn-levelDetail">
-      <app-level-detail-button></app-level-detail-button>
+      <app-level-detail-button
+        (click)="openLevelDetail('week3')"
+      ></app-level-detail-button>
     </div>
   </div>
 </div>

@@ -21,6 +21,7 @@ export class StoryBoard1Component implements OnInit, AfterViewInit {
  */
   @HostListener('window:keydown', ['$event'])
   keyEvent(event: KeyboardEvent) {
+    console.log(event.code);
     switch (event.code) {
       case 'ArrowUp':
         event.preventDefault();
@@ -30,6 +31,11 @@ export class StoryBoard1Component implements OnInit, AfterViewInit {
       case 'ArrowDown':
         event.preventDefault();
         this.playOptionAni(2);
+        break;
+      case 'Enter':
+      case 'NumpadEnter':
+        if (this.selectedOption === 1) this.login();
+        else this.signUp();
         break;
     }
 
@@ -83,19 +89,13 @@ export class StoryBoard1Component implements OnInit, AfterViewInit {
   }
 
 
-  onKeyDown(event: KeyboardEvent) {
-    console.log(event);
-    switch (event.code) {
-      case 'ArrowUp':
-        event.preventDefault();
-        // this.playOptionAni(1);
+  signUp() {
+    window.open('https://2022.thef2e.com/');
+  }
 
-        break;
-      case 'ArrowDown':
-        event.preventDefault();
-        // this.playOptionAni(2);
-        break;
-    }
+  login() {
+
+    window.open('https://2022.thef2e.com/login');
   }
 
 }

@@ -13,4 +13,12 @@ export class AppComponent {
 
   constructor() {
   }
+
+  signUp() {
+    window.open('https://2022.thef2e.com/');
+  }
+
+  login() {
+    window.open('https://2022.thef2e.com/login');
+  }
 }

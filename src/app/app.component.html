@@ -13,13 +13,33 @@ hello world -->
 <nav>
   <ol>
     <li><img src="../assets/images/title.png" alt="title.png" /></li>
-    <li><a class="btn-black" href="">關卡資訊</a></li>
-    <li><a class="btn-black" href="">攻略資源</a></li>
-    <li><a class="btn-black" href="">求職專區</a></li>
     <li>
-      <app-sigh-up-button></app-sigh-up-button>
+      <a class="btn-black" href="https://2022.thef2e.com/news" target="_blank"
+        >關卡資訊</a
+      >
     </li>
-    <li><app-sigh-up-button [displayText]="'登入'"></app-sigh-up-button></li>
+    <li>
+      <a
+        class="btn-black"
+        href="https://hackmd.io/ofJD4K7iSI65V19zxC7d0w"
+        target="_blank"
+        >攻略資源</a
+      >
+    </li>
+    <li>
+      <a class="btn-black" href="https://2022.thef2e.com/jobs" target="_blank"
+        >求職專區</a
+      >
+    </li>
+    <li>
+      <app-sigh-up-button (click)="signUp()"></app-sigh-up-button>
+    </li>
+    <li>
+      <app-sigh-up-button
+        [displayText]="'登入'"
+        (click)="login()"
+      ></app-sigh-up-button>
+    </li>
   </ol>
 </nav>
 
