@@ -5,7 +5,7 @@
   position: absolute;
   right: $right;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -13,8 +13,13 @@
   background-color: $bgColor;
   background-image: $bgImg;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: 768px 865px;
+  padding-top: 200px;
+  @include mobile {
+    background-position: center;
+    padding-top: 161px;
+  }
 }
 
 .storyBoard4 {
@@ -27,6 +32,12 @@
   overflow: hidden;
   .week1 {
     @include baseWeek(#b82a06, url("../../assets/images/week1.png"), 0);
+    .btn-levelDetail {
+      margin-top: 290px;
+      @include mobile {
+        display: none;
+      }
+    }
     .aniGroup {
       &::after {
         content: "";
@@ -61,10 +72,11 @@
       }
       &:nth-child(2) {
         font-size: var(--headline1);
+        margin-bottom: 47px;
         @include mobile {
           font-size: var(--headline4);
+          margin-bottom: 97px;
         }
-        margin-bottom: 97px;
       }
       &:nth-child(3) {
         font-size: var(--headline6);
@@ -79,6 +91,12 @@
 
   .week2 {
     @include baseWeek(#76b9d6, url("../../assets/images/week2.png"), -100%);
+    .btn-levelDetail {
+      margin-top: 290px;
+      @include mobile {
+        display: none;
+      }
+    }
     .aniGroup {
       &::before {
         content: "";
@@ -113,10 +131,11 @@
       }
       &:nth-child(2) {
         font-size: var(--headline1);
+        margin-bottom: 47px;
         @include mobile {
           font-size: var(--headline4);
+          margin-bottom: 97px;
         }
-        margin-bottom: 97px;
       }
       &:nth-child(3) {
         font-size: var(--headline4);
@@ -131,6 +150,12 @@
 
   .week3 {
     @include baseWeek(#215400, url("../../assets/images/week3.png"), -100%);
+    .btn-levelDetail {
+      margin-top: 290px;
+      @include mobile {
+        display: none;
+      }
+    }
     .aniGroup {
       &::before {
         content: "";
@@ -158,10 +183,11 @@
       }
       &:nth-child(2) {
         font-size: var(--headline1);
+        margin-bottom: 47px;
         @include mobile {
           font-size: var(--headline4);
+          margin-bottom: 97px;
         }
-        margin-bottom: 97px;
       }
       &:nth-child(3) {
         font-size: var(--headline4);
