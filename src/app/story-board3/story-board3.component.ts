@@ -14,20 +14,29 @@ export class StoryBoard3Component implements OnInit {
   }
 
   ngOnInit(): void {
+    let mm = gsap.matchMedia();
+
+    let lv1LimitHight = '20em';
+
+    // 不同裝置大小
+    mm.add("(min-width: 768px)", () => {
+      lv1LimitHight = '32em'
+    });
+
     var t1 = gsap.timeline({
       scrollTrigger: {
         trigger: '.sunRiseContainer',
-        start: 'center center',
-        end: '2500 top',
-        scrub: 1,
+        start: '700 center',
+        end: '3000 top',
+        scrub: 2,
         // markers: true,
         pin: true,
       },
     });
 
-    t1.fromTo('.lv3', { bottom: 0, }, { bottom: -1000 })
-      .fromTo('.lv4', { bottom: 0, }, { bottom: -1000 })
-      .fromTo('.lv1', { bottom: 0, color: '#ffff00' }, { top: '7vh', color: '#ffffff' }, '<')
+    t1.fromTo('.lv3', { bottom: 0, }, { bottom: -1000, duration: 5 })
+      .fromTo('.lv4', { bottom: 0, }, { bottom: -1000, duration: 5 })
+      .fromTo('.lv1', { bottom: 0, color: '#ffff00' }, { top: lv1LimitHight, color: '#ffffff', duration: 10 })
       .fromTo('.sunRiseContainer', { background: '#000000' }, { background: '#ffb3a4' }, '<');
   }
 

@@ -21,6 +21,9 @@
   position: relative;
   height: 100vh;
   margin-top: 488px;
+  // @include mobile {
+  //   margin-top: 561px;
+  // }
   overflow: hidden;
   .week1 {
     @include baseWeek(#b82a06, url("../../assets/images/week1.png"), 0);
