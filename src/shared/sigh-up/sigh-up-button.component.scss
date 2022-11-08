@@ -6,7 +6,7 @@ $borderWidth: 5px;
   background-color: #ffffff;
   border: 0;
   font-size: var(--headline7);
-  width: 104px;
+  min-width: 104px;
   height: 35px;
 
   &:hover {

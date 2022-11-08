@@ -10,6 +10,8 @@ import { StoryBoard1Component } from './story-board1/story-board1.component';
 import { StoryBoard2Component } from './story-board2/story-board2.component';
 import { StoryBoard3Component } from './story-board3/story-board3.component';
 import { StoryBoard4Component } from './story-board4/story-board4.component';
+import { StoryBoard5Component } from './story-board5/story-board5.component';
+import { StoryBoard6Component } from './story-board6/story-board6.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { StoryBoard4Component } from './story-board4/story-board4.component';
     StoryBoard1Component,
     StoryBoard2Component,
     StoryBoard3Component,
-    StoryBoard4Component
+    StoryBoard4Component,
+    StoryBoard5Component,
+    StoryBoard6Component
   ],
   imports: [
     BrowserModule,

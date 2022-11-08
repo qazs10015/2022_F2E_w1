@@ -1,0 +1,21 @@
+@import "mixin";
+
+.storyBoard6 {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+  }
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    font-size: var(--headline2);
+    @include mobile {
+      font-size: var(--headline4);
+    }
+  }
+}
