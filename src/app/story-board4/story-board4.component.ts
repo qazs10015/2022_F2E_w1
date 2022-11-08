@@ -14,11 +14,11 @@ export class StoryBoard4Component implements OnInit {
 
   ngOnInit(): void {
     const tl = gsap.timeline({
-      ease: 'power3',
       scrollTrigger: {
         // start: "top top",
-        // end: "bottom bottom",
-        scrub: 5,
+        end: "3500 top",
+        // markers: true,
+        scrub: 2,
         trigger: '.storyBoard4',
         pin: true
       }

@@ -18,7 +18,8 @@ export class StoryBoard3Component implements OnInit {
       scrollTrigger: {
         trigger: '.sunRiseContainer',
         start: 'center center',
-        scrub: true,
+        end: '2500 top',
+        scrub: 1,
         // markers: true,
         pin: true,
       },
@@ -26,7 +27,7 @@ export class StoryBoard3Component implements OnInit {
 
     t1.fromTo('.lv3', { bottom: 0, }, { bottom: -1000 })
       .fromTo('.lv4', { bottom: 0, }, { bottom: -1000 })
-      .fromTo('.lv1', { bottom: 250, color: '#ffff00' }, { top: '20vh', color: '#ffffff' }, '<')
+      .fromTo('.lv1', { bottom: 0, color: '#ffff00' }, { top: '7vh', color: '#ffffff' }, '<')
       .fromTo('.sunRiseContainer', { background: '#000000' }, { background: '#ffb3a4' }, '<');
   }
 
