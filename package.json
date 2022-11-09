@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod=true --base-href=/2022_F2E_w1/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
