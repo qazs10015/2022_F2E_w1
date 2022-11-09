@@ -8,6 +8,8 @@
 
 [Demo](https://qazs10015.github.io/2022_F2E_w1/)
 
+> 依設計師提供的設計稿，最低解析度為 768，所以手機可能會跑版
+
 ## 系統說明
 
 專案運行方式是使用 `npm install`、`npm start`
