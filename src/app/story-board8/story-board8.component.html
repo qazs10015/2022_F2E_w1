@@ -1,0 +1,40 @@
+<div class="storyBoard8">
+  <div class="commonQuestion bg-primary white">常見問答</div>
+  <div class="container">
+    <ol class="groups">
+      <li>
+        <app-sigh-up-button
+          class="btn-question"
+          [displayText]="'一般常見問題'"
+        ></app-sigh-up-button>
+      </li>
+      <li>
+        <app-sigh-up-button
+          class="btn-question"
+          [displayText]="'UI 設計師'"
+        ></app-sigh-up-button>
+      </li>
+      <li>
+        <app-sigh-up-button
+          class="btn-question"
+          [displayText]="'前端工程師'"
+        ></app-sigh-up-button>
+      </li>
+      <li>
+        <app-sigh-up-button
+          class="btn-question"
+          [displayText]="'團體組'"
+        ></app-sigh-up-button>
+      </li>
+    </ol>
+    <ol class="answers">
+      <li *ngFor="let item of filterData">
+        <p class="question tertiary">{{ item.question }}</p>
+        <p class="answer white">{{ item.answer }}</p>
+      </li>
+    </ol>
+    <div class="register">
+      <app-sigh-up-xl-button></app-sigh-up-xl-button>
+    </div>
+  </div>
+</div>

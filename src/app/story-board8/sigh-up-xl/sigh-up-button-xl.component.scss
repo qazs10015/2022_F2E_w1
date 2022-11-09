@@ -1,4 +1,6 @@
-$borderWidth: 5px;
+@import "mixin";
+
+$borderWidth: 11px;
 
 .btn-default {
   cursor: pointer;
@@ -6,10 +8,15 @@ $borderWidth: 5px;
   color: var(--primary);
   background-color: #ffffff;
   border: 0;
-  font-size: var(--headline7);
-  min-width: 104px;
-  height: 35px;
-  width: 100%;
+  font-size: var(--headline1);
+  width: 1370px;
+  height: 140px;
+
+  @include mobile {
+    font-size: var(--headline4);
+    width: 717px;
+    height: 65px;
+  }
 
   &:hover {
     border-top: $borderWidth solid var(--tertiary);
