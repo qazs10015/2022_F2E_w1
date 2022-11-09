@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { LevelDetailButtonComponent } from 'src/shared/level-detail-button/level-detail-button.component';
 import { SighUpButtonXLComponent } from 'src/app/story-board8/sigh-up-xl/sigh-up-xl.component';
-import { SighUpButtonComponent } from 'src/shared/sigh-up/sigh-up.component';
+import { SignUpButtonComponent } from 'src/shared/sign-up/sign-up.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { StoryBoard5Component } from './story-board5/story-board5.component';
 import { StoryBoard6Component } from './story-board6/story-board6.component';
 import { StoryBoard7Component } from './story-board7/story-board7.component';
 import { StoryBoard8Component } from './story-board8/story-board8.component';
+import { StoryBoard9Component } from './story-board9/story-board9.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +26,13 @@ import { StoryBoard8Component } from './story-board8/story-board8.component';
     StoryBoard5Component,
     StoryBoard6Component,
     StoryBoard7Component,
-    StoryBoard8Component
+    StoryBoard8Component,
+    StoryBoard9Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SighUpButtonComponent,
+    SignUpButtonComponent,
     SighUpButtonXLComponent,
     LevelDetailButtonComponent
   ],

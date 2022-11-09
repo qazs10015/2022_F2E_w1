@@ -94,6 +94,8 @@ export class StoryBoard8Component implements OnInit {
     ]
   }
 
+  currentGroup = 'commonQA';
+
   filterData = this.data.commonQA;
 
   constructor() { }
@@ -103,6 +105,7 @@ export class StoryBoard8Component implements OnInit {
   }
 
   getQA(key: string) {
+    this.currentGroup = key;
     this.filterData = this.data[key];
   }
 

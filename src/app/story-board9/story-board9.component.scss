@@ -1,0 +1,52 @@
+@import "mixin";
+
+.storyBoard9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  .diamonds {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -100px;
+    img {
+      margin-bottom: 20px;
+    }
+  }
+  .title {
+    margin-top: 115px;
+    margin-bottom: 50px;
+    font-size: var(--headline1);
+    @include mobile {
+      font-size: var(--headline4);
+      margin-top: 49px;
+      margin-bottom: 20px;
+    }
+    span {
+      color: #ffc612;
+    }
+  }
+
+  .brandList {
+    z-index: 5;
+    li {
+      img {
+        margin-right: 31.84px;
+        @include mobile {
+          margin-right: 17.19px;
+        }
+      }
+      margin-bottom: 284px;
+      @include mobile {
+        margin-right: 112px;
+      }
+    }
+    // margin-bottom: 327.11px;
+    // @include mobile {
+    //   margin-bottom: 112px;
+    // }
+  }
+}

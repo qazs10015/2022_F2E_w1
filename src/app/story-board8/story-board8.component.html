@@ -3,28 +3,36 @@
   <div class="container">
     <ol class="groups">
       <li>
-        <app-sigh-up-button
+        <app-sign-up-button
           class="btn-question"
+          (click)="getQA('commonQA')"
+          [isActive]="currentGroup === 'commonQA'"
           [displayText]="'一般常見問題'"
-        ></app-sigh-up-button>
+        ></app-sign-up-button>
       </li>
       <li>
-        <app-sigh-up-button
+        <app-sign-up-button
           class="btn-question"
+          (click)="getQA('uiDesign')"
+          [isActive]="currentGroup === 'uiDesign'"
           [displayText]="'UI 設計師'"
-        ></app-sigh-up-button>
+        ></app-sign-up-button>
       </li>
       <li>
-        <app-sigh-up-button
+        <app-sign-up-button
           class="btn-question"
+          (click)="getQA('frontEnd')"
+          [isActive]="currentGroup === 'frontEnd'"
           [displayText]="'前端工程師'"
-        ></app-sigh-up-button>
+        ></app-sign-up-button>
       </li>
       <li>
-        <app-sigh-up-button
+        <app-sign-up-button
           class="btn-question"
+          (click)="getQA('group')"
+          [isActive]="currentGroup === 'group'"
           [displayText]="'團體組'"
-        ></app-sigh-up-button>
+        ></app-sign-up-button>
       </li>
     </ol>
     <ol class="answers">
