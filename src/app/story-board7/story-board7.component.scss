@@ -1,0 +1,63 @@
+@import "mixin";
+
+.storyBoard7 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 649px;
+  @include mobile {
+    margin-left: 140px;
+  }
+
+  & > section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 223px;
+    @include mobile {
+      margin-bottom: 100px;
+    }
+
+    .examineMechanism {
+      margin-top: 40px;
+      padding-left: 0;
+      & li {
+        font-size: var(--headline6);
+        @include mobile() {
+          font-size: var(--headline7);
+        }
+        margin-bottom: 35px;
+      }
+    }
+
+    .reward {
+      margin-top: 40px;
+      & li {
+        margin-bottom: 35px;
+        font-size: var(--headline4);
+        @include mobile {
+          font-size: var(--headline6);
+        }
+        list-style: square;
+        small {
+          font-size: var(--headline6);
+          @include mobile {
+            font-size: var(--headline7);
+          }
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+    }
+
+    .tertiary {
+      font-size: var(--headline2);
+      @include mobile() {
+        font-size: var(--headline4);
+      }
+    }
+  }
+}

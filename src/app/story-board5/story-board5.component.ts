@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -13,7 +14,7 @@ export class StoryBoard5Component implements OnInit {
   }
 
   signUp() {
-    window.open('https://2022.thef2e.com/');
+    window.open(environment.signUpURL);
   }
 
 }

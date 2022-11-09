@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, AfterViewInit, ViewChildren } from '@angular/core';
+import { environment } from './../../environments/environment';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -90,12 +91,12 @@ export class StoryBoard1Component implements OnInit, AfterViewInit {
 
 
   signUp() {
-    window.open('https://2022.thef2e.com/');
+    window.open(environment.signUpURL);
   }
 
   login() {
 
-    window.open('https://2022.thef2e.com/login');
+    window.open(environment.loginURL);
   }
 
 }

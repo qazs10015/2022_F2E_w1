@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChildren } from '@angular/core';
 import gsap from "gsap";
 // get other plugins:
@@ -15,10 +16,10 @@ export class AppComponent {
   }
 
   signUp() {
-    window.open('https://2022.thef2e.com/');
+    window.open(environment.signUpURL);
   }
 
   login() {
-    window.open('https://2022.thef2e.com/login');
+    window.open(environment.loginURL);
   }
 }

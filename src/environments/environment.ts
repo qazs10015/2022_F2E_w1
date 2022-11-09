@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  signUpURL: 'https://2022.thef2e.com/',
+  loginURL: 'https://2022.thef2e.com/login'
 };
 
 /*
