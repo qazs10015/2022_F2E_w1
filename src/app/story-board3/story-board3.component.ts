@@ -19,9 +19,11 @@ export class StoryBoard3Component implements OnInit {
     let lv1LimitHight = '20em';
 
     // 不同裝置大小
-    mm.add("(min-width: 768px)", () => {
+    mm.add("(max-width: 768px)", () => {
       lv1LimitHight = '32em'
     });
+
+    console.log(lv1LimitHight);
 
     var t1 = gsap.timeline({
       scrollTrigger: {
